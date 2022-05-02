@@ -35,7 +35,7 @@ h4 {
   border-bottom: 1.5rem dotted var(--clr-green);
   border-radius: 100%;
   animation: spin .9s linear infinite;
-  display: none;
+  /* display: none; */
 }
 @keyframes spin {
   0% {
