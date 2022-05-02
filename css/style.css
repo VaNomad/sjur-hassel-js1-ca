@@ -1,0 +1,73 @@
+/* 
+——————————————————————————— ‡ ——————————————————————————— Global Styles —— */
+:root {
+  --clr-white: #fff;
+  --clr-grey: #aaaaaa;
+  --clr-black: #000;
+  --clr-green: #1eb2d0;
+  --clr-yello: #eef52b;
+  --clr-orange: #e46a2d;
+  --clr-pink: #f375cf;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Dosis', sans-serif;
+  background-color: var(--clr-black);
+  color: var(--clr-yello);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Bebas Neue', cursive;
+}
+
+/* 
+——————————————————————————— ‡ ——————————————————————————— Shared Styles —— */
+.loader {
+  width: 13rem;
+  height: 13rem;
+  border: 1.5rem dotted var(--clr-pink);
+  border-bottom: 1.5rem dotted var(--clr-green);
+  border-radius: 100%;
+  animation: spin .9s linear infinite;
+  display: none;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 
+——————————————————————————— ‡ ——————————————————————————— Index Styles —— */
+.main-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.results-container {
+  margin: 1rem;
+  padding: 5rem;
+  max-width: 15rem;
+  color: var(--clr-grey) ;
+  border: .2rem solid var(--clr-grey);
+  border-radius: .5rem;
+  display: none;
+}
+/* 
+——————————————————————————— ‡ ——————————————————————————— Detail Styles —— */
+
+
+
+/* 
+——————————————————————————— ‡ ——————————————————————————— Contact Styles —— */
