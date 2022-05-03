@@ -8,13 +8,15 @@ async function callApi() {
 
     const response = await fetch(url);
     const json = await response.json();
+    const data = json.data.results;
 
     resultsContainer.innerHTML = "";
 
-    console.log(json);
-    
-    resultsContainer.innerHTML = `<div style="font-size: 3rem;">seriously? ${json.name}</div>`;
-    
+    for (let i = 0; i < data.length; i++) {
+      console.log(data[i].name);
+
+      resultsContainer.innerHTML = `<div style="font-size: 3rem;">seriously? ${data[0].name} ?</div>`;
+    }
 
   } catch (error) {
     console.log(error);
