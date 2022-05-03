@@ -48,21 +48,26 @@ h4 {
 
 /* 
 ——————————————————————————— ‡ ——————————————————————————— Index Styles —— */
-.main-container{
-  height: 100vh;
+.firstContainer{
+  max-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
- 
+  flex-direction: column;
 }
 .results-container {
-  margin: 1rem;
-  padding: 5rem;
-  max-width: 15rem;
+  margin: 3rem;
+  padding: 4rem;
   color: var(--clr-grey) ;
   border: .2rem solid var(--clr-grey);
   border-radius: .5rem;
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.results-container p {
+  padding: 1rem 0;
 }
 /* 
 ——————————————————————————— ‡ ——————————————————————————— Detail Styles —— */
