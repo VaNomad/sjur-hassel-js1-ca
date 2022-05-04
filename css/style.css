@@ -27,7 +27,6 @@ h4 {
 }
 main h1 {
   text-align: center;
-  margin-top: 3rem;
   font-size: 4rem;
   color: var(--clr-white);
 }
@@ -40,7 +39,6 @@ main h1 {
   border-bottom: 1.5rem dotted var(--clr-green);
   border-radius: 100%;
   animation: spin .9s linear infinite;
-  /* display: none; */
 }
 @keyframes spin {
   0% {
@@ -53,8 +51,9 @@ main h1 {
 
 /* 
 ——————————————————————————— ‡ ——————————————————————————— Index Styles —— */
-.container{
+.container, .results-container {
   margin: 2rem;
+  padding: 2rem;
   color: var(--clr-grey) ;
   border: .2rem solid var(--clr-grey);
   border-radius: .5rem;
@@ -66,15 +65,11 @@ main h1 {
 .results-container {
   margin: 1rem;
   padding: 2rem;
-  
   border-radius: .5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.results-container p {
-  padding-top: 1rem;
 }
 /* 
 ——————————————————————————— ‡ ——————————————————————————— Detail Styles —— */
