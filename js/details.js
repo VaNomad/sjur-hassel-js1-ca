@@ -9,6 +9,7 @@ async function getCharacter() {
 
   console.log(json);
 
-  details.innerHTML = `<h1>${json.data.results[0]}</h1>`;
+  details.innerHTML = `
+  <h1>${json.data.results[0].name}</h1>`;
 }
 getCharacter();
