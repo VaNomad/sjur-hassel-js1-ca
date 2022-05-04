@@ -18,12 +18,12 @@ async function callApi() {
       console.log(characters[i]);
 
       container.innerHTML += `
-                            <div class="results-container">
+                            <a href="details.html?id=${characters.id}" class="character-cards">
                               <h2 style="font-size: 3.5rem;">Name: ${characters[i].name}</h2>
                               <h3 style="font-size: 2rem;">ID: ${characters[i].id}</h3>
                               <p style="font-size: 2rem;">Modified: ${characters[i].modified}</p>
                               <img src="${characters[0].url}">
-                            </div>`;
+                            </a>`;
     }
 
   } catch (error) {
