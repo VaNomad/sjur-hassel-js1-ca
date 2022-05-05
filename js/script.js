@@ -30,7 +30,8 @@ async function callApi() {
 
   } catch (error) {
     console.log(error);
-    resultsContainer.innerHTML = "Ah bollocks! There is a bug somewhere!";
+    container.innerHTML = "Ah bollocks! There is a bug somewhere!";
   }
 }
 callApi();
+
