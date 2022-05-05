@@ -9,12 +9,10 @@ const id = params.get("id");
 console.log(id);
 
 
-
-const endpoint = "https://gateway.marvel.com/v1/public/characters/1011031"
 const apikey = "?apikey=bbf15e68860571493abe4a781bdf7e71"
-const url = endpoint + id + apikey;
+const url = "https://gateway.marvel.com/v1/public/characters/" + id + apikey;
 
-// const arl = "https://gateway.marvel.com/v1/public/characters/1011031?apikey=bbf15e68860571493abe4a781bdf7e71";
+// const wholeUrl = "https://gateway.marvel.com/v1/public/characters/1011031?apikey=bbf15e68860571493abe4a781bdf7e71";
 
 async function getCharacter() {
   try {
@@ -33,7 +31,8 @@ async function getCharacter() {
       details.innerHTML = `
         <h1>${data[i].name}</h1>
         <h2>${data[i].id}<h2>
-        <h3>${data[i].modified}`;
+        <h3>${data[i].modified}<h3>
+        <div style="background-image: url(${data[i].path});"></div>`;
     }
   
     
