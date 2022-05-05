@@ -5,7 +5,7 @@
   --clr-grey: #aaaaaa;
   --clr-black: #000;
   --clr-green: #20fb08;
-  --clr-yello: #eef52b;
+  --clr-yellow: #eef52b;
   --clr-orange: #ff7e3d;
   --clr-pink: #f375cf;
 }
@@ -18,7 +18,7 @@ body {
   font-size: 1.5rem;
   font-family: 'Dosis', sans-serif;
   background-color: var(--clr-black);
-  color: var(--clr-yello);
+  color: var(--clr-white);
 
 }
 h1,
@@ -36,6 +36,7 @@ h2 {
 p {
   text-align: center;
   padding: 2rem;
+  color: var(--clr-yellow);
 }
 /* 
 ——————————————————————————— ‡ ——————————————————————————— Shared Styles —— */
@@ -55,7 +56,6 @@ p {
     transform: rotate(360deg);
   }
 }
-
 /* 
 ——————————————————————————— ‡ ——————————————————————————— Index Styles —— */
 .container {
