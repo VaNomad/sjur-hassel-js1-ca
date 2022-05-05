@@ -4,9 +4,9 @@
   --clr-white: #fff;
   --clr-grey: #aaaaaa;
   --clr-black: #000;
-  --clr-green: #1eb2d0;
+  --clr-green: #20fb08;
   --clr-yello: #eef52b;
-  --clr-orange: #e46a2d;
+  --clr-orange: #ff7e3d;
   --clr-pink: #f375cf;
 }
 * {
@@ -27,10 +27,11 @@ h3,
 h4 {
   font-family: 'Bebas Neue', cursive;
 }
-main h1 {
-  text-align: center;
-  font-size: 4rem;
-  color: var(--clr-white);
+h1 {
+  color: var(--clr-orange);
+}
+h2 {
+  color: var(--clr-green);
 }
 p {
   text-align: center;
@@ -57,7 +58,23 @@ p {
 
 /* 
 ——————————————————————————— ‡ ——————————————————————————— Index Styles —— */
-.container, .character-cards {
+.container {
+  margin: auto;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+.main-head {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 4rem;
+  color: var(--clr-yello);
+}
+.character-cards {
+  min-width: 70vw;
   margin: 2rem;
   padding: 2rem;
   color: var(--clr-pink) ;

@@ -1,5 +1,7 @@
 const details = document.querySelector(".details");
 
+const heading = document.querySelector(".main-head");
+
 const queryString = document.location.search;
 
 const params = new URLSearchParams(queryString);
@@ -16,18 +18,27 @@ async function getCharacter() {
   try {
     const response = await fetch(url);
     const json = await response.json();
-    const data = json.data.results
+    const talents = json.data.results
 
     details.innerHTML = "";
+    heading.innerHTML = "Description";
+    // for (let i = 0; i < data.length; i++) {
+    //   console.log(data[i]);
 
-    for (let i = 0; i < data.length; i++) {
-      console.log(data[i]);
+    //   details.innerHTML = `
+    //     <h1>${data[i].name}</h1>
+    //     <h2>${data[i].id}<h2>
+    //     <h3>${data[i].description}<h3>`;
+    // }
 
+    talents.forEach(function(talent) {
       details.innerHTML = `
-        <h1>${data[i].name}</h1>
-        <h2>${data[i].id}<h2>
-        <h3>${data[i].description}<h3>`;
-    }
+        <h1>${talent.name}</h1>
+        <h2>${talent.id}<h2>
+        <h3>${talent.description}<h3>`  
+    });
+
+
   } catch (error) {
       console.log(error);
       details.innerHTML = ("There seems to be an error", error) 
