@@ -15,9 +15,11 @@
   box-sizing: border-box;
 }
 body {
+  font-size: 1.5rem;
   font-family: 'Dosis', sans-serif;
   background-color: var(--clr-black);
   color: var(--clr-yello);
+
 }
 h1,
 h2,
@@ -29,6 +31,10 @@ main h1 {
   text-align: center;
   font-size: 4rem;
   color: var(--clr-white);
+}
+p {
+  text-align: center;
+  padding: 2rem;
 }
 /* 
 ——————————————————————————— ‡ ——————————————————————————— Shared Styles —— */
@@ -54,7 +60,7 @@ main h1 {
 .container, .character-cards {
   margin: 2rem;
   padding: 2rem;
-  color: var(--clr-grey) ;
+  color: var(--clr-pink) ;
   border: .2rem solid var(--clr-grey);
   border-radius: .5rem;
   display: flex;
