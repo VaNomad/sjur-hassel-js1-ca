@@ -16,15 +16,13 @@ async function getCharacter() {
   try {
     const response = await fetch(url);
     const json = await response.json();
-    const data = json.data.results;
-  
-    console.log(data);
+    const data = json.data.results
 
     details.innerHTML = "";
 
     for (let i = 0; i < data.length; i++) {
       console.log(data[i]);
-      
+
       details.innerHTML = `
         <h1>${data[i].name}</h1>
         <h2>${data[i].id}<h2>

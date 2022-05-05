@@ -15,14 +15,18 @@ async function callApi() {
 
     const characters = json.data.results;
 
-    characters.forEach(function(character) {
+    for(let i = 0; i < characters.length; i++) {
+      if (characters[i].description === "") {
+        continue;
+      }
+    
       container.innerHTML += `
-        <a href="details.html?id=${character.id}" class="character-cards">
-        <h2 style="font-size: 3.5rem;">Name: ${character.name}</h2>
-        <h3 style="font-size: 2rem;">ID: ${character.id}</h3>
-        <p style="font-size: 2rem;">Modified: ${character.modified}</p>
-      </a>`;
-    });
+        <a href="details.html?id=${characters[i].id}" class="character-cards">
+        <h2 style="font-size: 3.5rem;">Name: ${characters[i].name}</h2>
+        <h3 style="font-size: 2rem;">ID: ${characters[i].id}</h3>
+        <p style="font-size: 2rem;">Modified: ${characters[i].modified}</p>
+        </a>`
+    }
 
   } catch (error) {
     console.log(error);
