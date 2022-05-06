@@ -20,21 +20,13 @@ async function getCharacter() {
   try {
     const response = await fetch(url);
     const json = await response.json();
-    const talents = json.data.results
+    const talents = json.data.results;
 
     details.innerHTML = "";
     heading.innerHTML = "Description";
 
     title.innerHTML = "";
     title.innerHTML = "Description"
-    // for (let i = 0; i < data.length; i++) {
-    //   console.log(data[i]);
-
-    //   details.innerHTML = `
-    //     <h1>${data[i].name}</h1>
-    //     <h2>${data[i].id}<h2>
-    //     <h3>${data[i].description}<h3>`;
-    // }
 
     talents.forEach(function(talent) {
       details.innerHTML = `

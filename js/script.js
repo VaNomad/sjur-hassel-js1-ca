@@ -11,8 +11,6 @@ async function callApi() {
     const response = await fetch(url);
     const json = await response.json();
     
-    console.log(json);
-    
     container.innerHTML = "";
 
     const characters = json.data.results;
