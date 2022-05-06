@@ -12,6 +12,10 @@ const id = params.get("id");
 
 console.log(id);
 
+if (!id) {
+  location.href = "/";
+}
+
 
 const apikey = "?apikey=bbf15e68860571493abe4a781bdf7e71"
 const url = "https://gateway.marvel.com/v1/public/characters/" + id + apikey;
