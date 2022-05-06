@@ -8,6 +8,10 @@ const email = document.querySelector("#email");
 const emailErr = document.querySelector("#emailErr");
 const address = document.querySelector("#address");
 const addressErr = document.querySelector("#addressErr");
+const submitButton = document.querySelector(".btn");
+const sent = document.querySelector("#sent");
+
+
 
 
 
@@ -38,11 +42,7 @@ function formVisa(event) {
   } else {
     addressErr.style.display = "block";
   }
-  
-
-  console.log("howdy");
-  
-  
+  totalValid(formVisa);
 }
 form.addEventListener("submit", formVisa)
 
@@ -54,17 +54,16 @@ function checkRange(value, range) {
   }
 }
 
-
-
 function emailVisa(email) {
   const regEx = /\S+@\S+\.\S+/;
   const typeFit = regEx.test(email);
   return typeFit;
 }
 
-form.onsubmit = function (event) {
-  event.preventDefault();
+form.addEventListener("submit", function (event) {
+  if (form) {
+    event.preventDefault();
+    sent.style.display = "block";
+  }
+});
 
-  console.log(event);
-  
-}
