@@ -10,9 +10,13 @@ async function callApi() {
 
     const response = await fetch(url);
     const json = await response.json();
+    
+    container.innerHTML = "";
+
     const characters = json.data.results;
 
-    container.innerHTML = "";
+    console.log(characters);
+    
 
     for(let i = 0; i < characters.length; i++) {
       if (characters[i].description === "") {

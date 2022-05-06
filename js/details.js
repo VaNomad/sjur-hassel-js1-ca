@@ -21,18 +21,29 @@ async function getCharacter() {
     const response = await fetch(url);
     const json = await response.json();
     const talents = json.data.results;
+    console.log(json);
+    
 
     details.innerHTML = "";
     heading.innerHTML = "Description";
 
     title.innerHTML = "";
-    title.innerHTML = "Description"
+    title.innerHTML = "Description";
+    
+    // for (let i = 0; i < talents.length; i++) {
+    //   console.log(talents[i]);
+
+    //   details.innerHTML += `
+    //     <h1>${talents[i].name}</h1>
+    //     <h2>${talents[i].id}<h2>
+    //     <h3>${talents[i].description}<h3>`;
+    // }
 
     talents.forEach(function(talent) {
-      details.innerHTML = `
-        <h1>${talent.name}</h1>
-        <h2>${talent.id}<h2>
-        <h3>${talent.description}<h3>`  
+      details.innerHTML += `
+        <h1>${talents.name}</h1>
+        <h2>${talents.id}<h2>
+        <h3>${talents.description}<h3>`  
     });
 
 
