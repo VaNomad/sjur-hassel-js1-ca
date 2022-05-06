@@ -1,3 +1,5 @@
+const title = document.querySelector(".title");
+
 const details = document.querySelector(".details");
 
 const heading = document.querySelector(".main-head");
@@ -22,6 +24,9 @@ async function getCharacter() {
 
     details.innerHTML = "";
     heading.innerHTML = "Description";
+
+    title.innerHTML = "";
+    title.innerHTML = "Description"
     // for (let i = 0; i < data.length; i++) {
     //   console.log(data[i]);
 
