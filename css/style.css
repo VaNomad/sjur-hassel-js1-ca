@@ -129,3 +129,6 @@ button {
   display: flex;
   margin: 5.5rem auto;
 }
+a {
+  text-decoration: none;
+}

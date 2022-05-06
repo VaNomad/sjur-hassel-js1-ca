@@ -10,6 +10,7 @@ const address = document.querySelector("#address");
 const addressErr = document.querySelector("#addressErr");
 const submitButton = document.querySelector(".btn");
 const sent = document.querySelector("#sent");
+const formError = document.querySelector(".form-error");
 
 
 
@@ -42,7 +43,7 @@ function formVisa(event) {
   } else {
     addressErr.style.display = "block";
   }
-  totalValid(formVisa);
+  validForm();
 }
 form.addEventListener("submit", formVisa)
 
@@ -60,10 +61,25 @@ function emailVisa(email) {
   return typeFit;
 }
 
-form.addEventListener("submit", function (event) {
-  if (form) {
-    event.preventDefault();
-    sent.style.display = "block";
-  }
-});
+// function validForm(event) {
+//   if (fullNameErr.style.display = "block" || subjectErr.style.display = "block" || emailErr.style.display = "block" || addressErr.style.display = "block") {
+//     return false;
+//   } else {
+//     return true;
+//   }
+//   form.reset();
+// } 
 
+function validForm(event) {
+  event.preventDefault();
+
+  form.reset();
+
+  if (formVisa) {
+    sent.style.display = "block";
+  } else {
+    sent.style.display = "none";
+  }
+  
+}
+form.addEventListener("submit", validForm)
