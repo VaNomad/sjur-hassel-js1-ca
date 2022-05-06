@@ -60,6 +60,49 @@ p {
     transform: rotate(360deg);
   }
 }
+
+
+/* 
+——————————————————————————— ‡ ——————————————————————————— Nav Styles —— */
+.circle {
+  margin: 1rem 3rem;
+  box-shadow: 0 0 20px 10px var(--clr-pink);
+  position: absolute;
+  height:8rem;
+  width: 8rem;
+  border-radius: 50%;
+}
+nav {
+  border-bottom: 1px solid var(--clr-white);
+  border-radius: 20%;
+  padding: 1rem;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.crumb {
+  display: flex;
+  justify-content: center;
+}
+.crumb a::after {
+  color: var(--clr-white);
+  content: '>';
+  margin-left: .5rem;
+}
+a:focus {
+  color: var(--clr-white);
+}
+a:hover {
+  color: var(--clr-pink);
+}
+a:active {
+  text-decoration: underline;
+}
+
+
+
 /* 
 ——————————————————————————— ‡ ——————————————————————————— Index Styles —— */
 .container {
