@@ -9,6 +9,8 @@
   --clr-orange: #ff7e3d;
   --clr-red: #fc2e2e;
   --clr-pink: #f375cf;
+  --clr-sub: rgba(45, 245, 165, 0.35);
+  --clr-res: rgba(255, 74, 74, 0.424);
 
 }
 * {
@@ -94,6 +96,10 @@ p {
 
 /* 
 ——————————————————————————— ‡ ——————————————————————————— Contact Styles —— */
+form {
+  display: flex;
+  flex-direction: column;
+}
 .all {
   font-size: 1.5rem;
   width: 50vw;
@@ -108,10 +114,18 @@ input {
 }
 button {
   text-transform: uppercase;
-  background-color: rgba(45, 245, 165, 0.35);
+  background-color: var(--clr-sub);
 }
 .form-error {
-  /* display: none; */
+  display: none;
   color: var(--clr-red);
   margin: 0;
+}
+.reset {
+  background-color: var(--clr-res);
+  padding: .8rem;
+  font-size: 1.2rem;
+  width: 30vw;
+  display: flex;
+  margin: 5.5rem auto;
 }
