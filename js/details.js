@@ -18,7 +18,7 @@ if (!id) {
 
 
 const apikey = "?apikey=bbf15e68860571493abe4a781bdf7e71"
-const url = "https://gateway.marvel.com/v1/public/characters/" + id + apikey;
+const url = "https://gatewa.marvel.com/v1/public/characters/" + id + apikey;
 
 async function getCharacter() {
   try {
@@ -53,7 +53,7 @@ async function getCharacter() {
 
   } catch (error) {
       console.log(error);
-      details.innerHTML = ("There seems to be an error", error) 
+    details.innerHTML = "There is something wrong with your network connection!";
   }
 }
 getCharacter();

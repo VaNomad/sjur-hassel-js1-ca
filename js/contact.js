@@ -9,13 +9,8 @@ const emailErr = document.querySelector("#emailErr");
 const address = document.querySelector("#address");
 const addressErr = document.querySelector("#addressErr");
 const submitButton = document.querySelector(".btn");
-const sent = document.querySelector("#sent");
+const sent = document.querySelector(".sent");
 const formError = document.querySelector(".form-error");
-
-
-
-
-
 
 function formVisa(event) {
   event.preventDefault();
@@ -43,7 +38,11 @@ function formVisa(event) {
   } else {
     addressErr.style.display = "block";
   }
-  validForm();
+  
+  if (checkRange(fullName.value, 1) && checkRange(subject.value, 9) && emailVisa(email.value) && checkRange(address.value, 24)) {
+    sent.innerHTML = `Your message has been sent!`; 
+  form.reset();
+  }
 }
 form.addEventListener("submit", formVisa)
 
@@ -60,26 +59,3 @@ function emailVisa(email) {
   const typeFit = regEx.test(email);
   return typeFit;
 }
-
-// function validForm(event) {
-//   if (fullNameErr.style.display = "block" || subjectErr.style.display = "block" || emailErr.style.display = "block" || addressErr.style.display = "block") {
-//     return false;
-//   } else {
-//     return true;
-//   }
-//   form.reset();
-// } 
-
-function validForm(event) {
-  event.preventDefault();
-
-  form.reset();
-
-  if (formVisa) {
-    sent.style.display = "block";
-  } else {
-    sent.style.display = "none";
-  }
-  
-}
-form.addEventListener("submit", validForm)
