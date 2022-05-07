@@ -19,9 +19,9 @@ async function callApi() {
     
 
     for(let i = 0; i < characters.length; i++) {
-      if (characters[i].description === "") {
-        continue;
-      }
+      // if (characters[i].description === "") {
+      //   continue;
+      // }
     
       container.innerHTML += `
         <a href="details.html?id=${characters[i].id}" class="character-cards">

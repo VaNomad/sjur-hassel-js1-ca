@@ -33,15 +33,6 @@ async function getCharacter() {
 
     title.innerHTML = "";
     title.innerHTML = "Description";
-    
-    // for (let i = 0; i < talents.length; i++) {
-    //   console.log(talents[i]);
-
-    //   details.innerHTML += `
-    //     <h1>${talents[i].name}</h1>
-    //     <h2>${talents[i].id}<h2>
-    //     <h3>${talents[i].description}<h3>`;
-    // }
 
     talents.forEach(function(talent) {
       details.innerHTML += `
