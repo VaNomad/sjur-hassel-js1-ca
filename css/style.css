@@ -9,8 +9,9 @@
   --clr-orange: #ff7e3d;
   --clr-red: #fc2e2e;
   --clr-pink: #f375cf;
-  --clr-sub: rgba(45, 245, 165, 0.35);
-  --clr-res: rgba(255, 74, 74, 0.424);
+  --clr-blue: #09163d;
+  --clr-sub: rgba(45, 245, 165, 0.3);
+  --clr-res: rgba(255, 74, 74, 0.3);
 
 }
 * {
@@ -89,11 +90,6 @@ nav ul {
   display: flex;
   justify-content: center;
 }
-/* a:after {
-  color: var(--clr-white);
-  content: '>';
-  margin-left: .5rem;
-} */
 a {
   color: var(--clr-yellow);
 }
@@ -109,7 +105,6 @@ nav a.active {
 ——————————————————————————— ‡ ——————————————————————————— Index Styles —— */
 .container {
   margin: auto;
-  padding: 0 4rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -122,7 +117,7 @@ nav a.active {
   color: var(--clr-yello);
 }
 .character-cards {
-  width: 70%;
+  width: 60%;
   margin: 2rem;
   padding: 1rem;
   color: var(--clr-pink) ;
@@ -134,7 +129,7 @@ nav a.active {
   align-items: center;
 }
 .image {
-  background-color: rgb(9, 22, 61);
+  background-color: var(--clr-blue);
   background-image: url("/img/loginImage.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -155,7 +150,20 @@ nav a.active {
 }
 /* 
 ——————————————————————————— ‡ ——————————————————————————— Detail Styles —— */
-
+.name-tag {
+  padding-top: 6rem;
+  font-size: 5rem;
+}
+.id-tag {
+  padding-top: 2rem;
+  font-size: 3rem;
+}
+.de-tag {
+  padding: 3rem;
+  font-size: 2rem;
+  font-family: 'Trispace', sans-serif;
+  
+}
 
 
 /* 
@@ -174,9 +182,12 @@ form {
   margin-top: 1rem;
 }
 input {
+  font-family: 'Trispace', sans-serif;
   background: none;
+  margin-bottom: 1.5rem;
 }
 button {
+  font-family: 'Trispace', sans-serif;
   text-transform: uppercase;
   background-color: var(--clr-sub);
 }
@@ -191,5 +202,5 @@ button {
   font-size: 1.2rem;
   width: 30vw;
   display: flex;
-  margin: 5.5rem auto;
+  margin: 1.5rem auto;
 }

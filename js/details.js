@@ -45,9 +45,9 @@ async function getCharacter() {
 
     talents.forEach(function(talent) {
       details.innerHTML += `
-        <h1>${talent.name}</h1>
-        <h2>${talent.id}<h2>
-        <h3>${talent.description}<h3>`  
+        <h1 class="name-tag">${talent.name}</h1>
+        <h2 class="id-tag">${talent.id}<h2>
+        <h3 class="de-tag">${talent.description}<h3>`  
     });
 
 
