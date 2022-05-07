@@ -42,6 +42,10 @@ p {
   padding: 2rem;
   color: var(--clr-yellow);
 }
+a {
+  text-decoration: none;
+}
+
 /* 
 ——————————————————————————— ‡ ——————————————————————————— Shared Styles —— */
 .loader {
@@ -78,7 +82,6 @@ nav {
   padding: 1rem;
 }
 nav ul {
-  list-style-type: none;
   display: flex;
   flex-direction: column;
 }
@@ -91,15 +94,16 @@ nav ul {
   content: '>';
   margin-left: .5rem;
 }
-a:focus {
-  color: var(--clr-white);
-}
-a:hover {
+.crumb:hover {
   color: var(--clr-pink);
 }
-a:active {
-  text-decoration: underline;
+/* a:hover {
+  color: var(--clr-pink);
 }
+a:focus {
+  color: var(--clr-white);
+} */
+
 
 
 
@@ -171,7 +175,4 @@ button {
   width: 30vw;
   display: flex;
   margin: 5.5rem auto;
-}
-a {
-  text-decoration: none;
 }
