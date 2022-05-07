@@ -25,9 +25,9 @@ async function callApi() {
     
       container.innerHTML += `
         <a href="details.html?id=${characters[i].id}" class="character-cards">
-        <h2 style="font-size: 3.5rem;">Name: ${characters[i].name}</h2>
-        <h3 style="font-size: 2rem;">ID: ${characters[i].id}</h3>
-        <p style="font-size: 2rem;">Modified: ${characters[i].modified}</p>
+        <h2 class="name">Name: ${characters[i].name}</h2>
+        <h3 class="id">ID: ${characters[i].id}</h3>
+        <p>Modified: ${characters[i].modified}</p>
         </a>`
     }
 
