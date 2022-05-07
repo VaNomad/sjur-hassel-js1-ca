@@ -11,6 +11,8 @@ const addressErr = document.querySelector("#addressErr");
 const submitButton = document.querySelector(".btn");
 const sent = document.querySelector(".sent");
 const formError = document.querySelector(".form-error");
+const header = document.querySelector(".main-head");
+
 
 function formVisa(event) {
   event.preventDefault();
@@ -40,7 +42,7 @@ function formVisa(event) {
   }
   
   if (checkRange(fullName.value, 1) && checkRange(subject.value, 9) && emailVisa(email.value) && checkRange(address.value, 24)) {
-    sent.innerHTML = `Your message has been sent!`; 
+    header.innerHTML = `<h1 style="color: var(--clr-yellow); font-size: 4rem;">Your message has been sent!</h1>`; 
   form.reset();
   }
 }
