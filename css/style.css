@@ -92,12 +92,16 @@ a:after {
   content: '>';
   margin-left: .5rem;
 }
+a {
+  color: var(--clr-yellow);
+}
 a:hover {
   color: var(--clr-pink);
 }
-a:focus {
+nav a.active {
   color: var(--clr-white);
-} 
+  text-decoration: underline;
+}
 
 /* 
 ——————————————————————————— ‡ ——————————————————————————— Index Styles —— */
