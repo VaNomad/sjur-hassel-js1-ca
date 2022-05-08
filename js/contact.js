@@ -1,4 +1,4 @@
-// ————————‡————————  FORM Validation  ————————‡————————
+// ————————‡————————  HTML Targets  ————————‡————————
 const form = document.querySelector("#contact-form");
 const fullName = document.querySelector("#fullName");
 const fullNameErr = document.querySelector("#fullNameErr");
@@ -8,12 +8,9 @@ const email = document.querySelector("#email");
 const emailErr = document.querySelector("#emailErr");
 const address = document.querySelector("#address");
 const addressErr = document.querySelector("#addressErr");
-const submitButton = document.querySelector(".btn");
-const sent = document.querySelector(".sent");
-const formError = document.querySelector(".form-error");
 const header = document.querySelector(".main-head");
 
-
+// ————————‡————————  FORM Validation  ————————‡————————
 function formVisa(event) {
   event.preventDefault();
 

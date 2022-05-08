@@ -9,16 +9,20 @@
   <title>Document</title>
 </head>
 <body class="image">
-  <div class="circle">
-    <nav>
-      <ul>
-        <li class="nav-li"><a href="/index.html">Home</a></li>
-        <li class="nav-li"><a href="/contact.html" class="active">contact</a></li>
-      </ul>
-    </nav>
-  </div>
-  <h1 class="main-head">Contact</h1>
+
+  <header>
+    <div class="circle">
+      <nav>
+        <ul>
+          <li class="nav-li"><a href="/index.html">Home</a></li>
+          <li class="nav-li"><a href="/contact.html" class="active">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
   <main class="container">
+    <h1 class="main-head">Contact</h1>
     <form id="contact-form">
       <div>
         <input class="all" name="fullName" id="fullName" placeholder="FULL NAME">
@@ -37,13 +41,16 @@
         <div class="form-error" id="addressErr">Enter minimum 25 characters!</div>
       </div>
       <button class="btn all">submit</button>
-      <p class="sent"></p>
       <div>
         <input class="all reset" type="reset" value="RESET FORM">
       </div>
     </form>
-    
   </main>
+
+  <footer>
+    <p>Data provided by Marvel. © 2014 Marvel</p>
+  </footer>
+
   <script src="/js/contact.js"></script>
 </body>
 </html>
