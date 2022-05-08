@@ -41,8 +41,9 @@ p {
   padding: 1rem;
 }
 
-/* ————————————————— ‡ ————————————————— SHARED Styles —— */
+/* ————————————————— ‡ ————————————————— LOADER Styles —— */
 .loader {
+  margin: 5.8rem auto;
   width: 13rem;
   height: 13rem;
   border: 1.5rem dotted var(--clr-pink);
@@ -96,6 +97,15 @@ nav a.active {
 }
 
 /* ————————————————— ‡ ————————————————— INDEX Styles —— */
+.bg-image {
+  background-color: var(--clr-blue);
+  background-image: url("/img/loginImage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left;
+  background-blend-mode: multiply;
+}
 .container {
   margin: auto;
   display: flex;
@@ -121,24 +131,14 @@ nav a.active {
   flex-direction: column;
   align-items: center;
 }
-.bg-image {
-  background-color: var(--clr-blue);
-  background-image: url("/img/loginImage.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: left;
-  background-blend-mode: multiply;
-}
 .name {
   font-size: 3.5rem;
-  padding-bottom: 1rem;
 }
 .id {
   font-size: 2.5rem;
 }
 .att {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 /* ————————————————— ‡ ————————————————— DETAIL Styles —— */
@@ -147,7 +147,7 @@ nav a.active {
   font-size: 5rem;
 }
 .id-tag {
-  padding-top: 2rem;
+  padding-top: 3rem;
   font-size: 3rem;
 }
 .de-tag {
