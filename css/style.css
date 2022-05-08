@@ -86,7 +86,7 @@ nav ul {
   display: flex;
   flex-direction: column;
 }
-.crumb {
+.nav-li {
   display: flex;
   justify-content: center;
 }
@@ -135,8 +135,7 @@ nav a.active {
   background-size: cover;
   background-attachment: fixed;
   background-position: left;
-  background-blend-mode: color-burn;
-  
+  background-blend-mode: multiply;
 }
 .name {
   font-size: 3.5rem;
