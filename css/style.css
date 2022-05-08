@@ -1,5 +1,4 @@
-/* 
-——————————————————————————— ‡ ——————————————————————————— Global Styles —— */
+/* ————————————————— ‡ ————————————————— GLOBAL Styles —— */
 :root {
   --clr-white: #fff;
   --clr-grey: #aaaaaa;
@@ -12,7 +11,6 @@
   --clr-blue: #09163d;
   --clr-sub: rgba(45, 245, 165, 0.3);
   --clr-res: rgba(255, 74, 74, 0.3);
-
 }
 * {
   margin: 0;
@@ -38,16 +36,12 @@ h2 {
   color: var(--clr-pink);
 }
 p {
+  color: var(--clr-yellow);
   text-align: center;
   padding: 1rem;
-  color: var(--clr-yellow);
-}
-a {
-  text-decoration: none;
 }
 
-/* 
-——————————————————————————— ‡ ——————————————————————————— Shared Styles —— */
+/* ————————————————— ‡ ————————————————— SHARED Styles —— */
 .loader {
   width: 13rem;
   height: 13rem;
@@ -65,8 +59,7 @@ a {
   }
 }
 
-/* 
-——————————————————————————— ‡ ——————————————————————————— Nav Styles —— */
+/* ————————————————— ‡ ————————————————— NAV Styles —— */
 .circle {
   margin: .7rem 2rem;
   box-shadow: 0 0 20px 5px var(--clr-pink);
@@ -92,6 +85,7 @@ nav ul {
 }
 a {
   color: var(--clr-yellow);
+  text-decoration: none;
 }
 a:hover {
   color: var(--clr-pink);
@@ -101,8 +95,7 @@ nav a.active {
   text-decoration: line-through;
 }
 
-/* 
-——————————————————————————— ‡ ——————————————————————————— Index Styles —— */
+/* ————————————————— ‡ ————————————————— INDEX Styles —— */
 .container {
   margin: auto;
   display: flex;
@@ -114,7 +107,7 @@ nav a.active {
   margin-top: 2rem;
   text-align: center;
   font-size: 4rem;
-  color: var(--clr-yello);
+  color: var(--clr-white);
 }
 .character-cards {
   width: 60%;
@@ -147,8 +140,8 @@ nav a.active {
 .att {
   margin-bottom: 4rem;
 }
-/* 
-——————————————————————————— ‡ ——————————————————————————— Detail Styles —— */
+
+/* ————————————————— ‡ ————————————————— DETAIL Styles —— */
 .name-tag {
   padding-top: 6rem;
   font-size: 5rem;
@@ -161,12 +154,9 @@ nav a.active {
   padding: 3rem;
   font-size: 2rem;
   font-family: 'Trispace', sans-serif;
-  
 }
 
-
-/* 
-——————————————————————————— ‡ ——————————————————————————— Contact Styles —— */
+/* ————————————————— ‡ ————————————————— CONTACT Styles —— */
 form {
   display: flex;
   flex-direction: column;
