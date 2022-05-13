@@ -9,6 +9,8 @@ const emailErr = document.querySelector("#emailErr");
 const address = document.querySelector("#address");
 const addressErr = document.querySelector("#addressErr");
 const header = document.querySelector(".main-head");
+const resetForm = document.querySelector(".reset");
+
 
 // ————————‡————————  FORM Validation  ————————‡————————
 function formVisa(event) {
@@ -43,7 +45,24 @@ function formVisa(event) {
   form.reset();
   }
 }
-form.addEventListener("submit", formVisa)
+form.addEventListener("submit", formVisa);
+
+// ————————————————————————————————————— How can I make this below more sussinct
+function clearForm(event) {
+
+  fullNameErr.innerHTML = "";
+  subjectErr.innerHTML = "";
+  emailErr.innerHTML = "";
+  addressErr.innerHTML = "";
+}
+
+function eventListener() {
+  if (clearForm) {
+    form.reset();
+  }
+}
+form.addEventListener("reset", clearForm);
+// ————————————————————————————————————— How can I make this above more sussinct
 
 function checkRange(value, range) {
   if (value.trim().length > range) {
