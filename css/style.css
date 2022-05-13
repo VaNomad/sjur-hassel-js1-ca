@@ -10,7 +10,9 @@
   --clr-pink: #f375cf;
   --clr-blue: #09163d;
   --clr-sub: rgba(45, 245, 165, 0.3);
+  --clr-sub-hov: rgba(5, 251, 152, 0.571);
   --clr-res: rgba(255, 74, 74, 0.3);
+  --clr-res-hov: rgba(255, 0, 0, 0.555);
 }
 * {
   margin: 0;
@@ -180,6 +182,15 @@ button {
   text-transform: uppercase;
   background-color: var(--clr-sub);
 }
+button:hover {
+  cursor: pointer;
+  background-color: var(--clr-sub-hov);
+  color: var(--clr-black);
+}
+button:active {
+  box-shadow: 0 0 .8rem .1rem var(--clr-sub-hov);
+  color: var(--clr-white);
+}
 .form-error {
   display: none;
   color: var(--clr-red);
@@ -192,4 +203,13 @@ button {
   width: 30vw;
   display: flex;
   margin: 1.5rem auto;
+}
+.reset:hover {
+  cursor: pointer;
+  background-color: var(--clr-res-hov);
+  color: var(--clr-black);
+}
+.reset:active {
+  box-shadow: 0 0 1rem .1rem var(--clr-res-hov);
+  color: var(--clr-white);
 }
