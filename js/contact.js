@@ -47,7 +47,7 @@ function formVisa(event) {
 }
 form.addEventListener("submit", formVisa);
 
-// ————————————————————————————————————— How can I make this below more sussinct
+// ————————————————————————————————————— How can I make this below more succinct
 function clearForm(event) {
 
   fullNameErr.innerHTML = "";
@@ -62,7 +62,7 @@ function eventListener() {
   }
 }
 form.addEventListener("reset", clearForm);
-// ————————————————————————————————————— How can I make this above more sussinct
+// ————————————————————————————————————— How can I make this above more succinct
 
 function checkRange(value, range) {
   if (value.trim().length > range) {
